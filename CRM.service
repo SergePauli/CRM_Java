@@ -1,0 +1,16 @@
+[Unit]
+  Description=CRM&contractsBase  
+ 
+[Service]
+  ExecStart=/bin/bash /usr/local/bin/crm_start.sh
+  ExecStop=/bin/bash /usr/local/bin/crm_stop.sh	
+  Type=idle
+  KillMode=process
+ 
+  SyslogIdentifier=CRM
+  SyslogFacility=daemon
+ 
+  Restart=on-failure
+ 
+[Install]
+  WantedBy=multiuser.target

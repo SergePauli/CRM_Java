@@ -1,0 +1,14 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+
+# production database
+db_data/**
+
+
+# database backup
+mySQL/Dump.sql
+
+# production glassfish domain backup
+glassfish/backups/domain1.zip*
+glassfish/glassfish4.zip*
