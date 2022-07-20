@@ -51,6 +51,10 @@ services:
       - 8080:8080/tcp
       - 8181:8181/tcp    
 
+    # обеспечить сохранение данных домена при отключении контейнера поможет 
+    # задание пути абсолютного пути к папке во внешней системе 'volumes'
+    volumes:
+      - /home/sergepauli/CRM_Java/glassfish/backups/domain1:/usr/local/glassfish4/glassfish/domains/domain1
     # Ключевое слово 'network_mode' используется для описания типа сети.
     # Тут мы указываем то, что контейнер может обращаться к 'localhost' компьютера.
 

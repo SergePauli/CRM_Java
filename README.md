@@ -13,16 +13,17 @@
  1. отредактируйте скрипт crm_start (sudo nano bin/crm_start.sh),
   указав абсолютный путь к папке db_data в строке запуска docker-контейнера
   
-  (например: 'cd /home/cbs_admin/CRM_Java')
+  _(например: 'cd /home/cbs_admin/CRM_Java')_
  
  2. отредактируйте скрипт docker-compose.yml (nano docker-compose.yml),
-  указав абсолютный путь к папке db_data в настройке 'volumes' сервиса 'database'
+  указав реальный абсолютный путь к папке проекта в настройке 'volumes' сервиса 'database',
+  и в настройке 'volumes' сервиса 'web_server'
   
-  (например: '- /home/cbs_admin/CRM_Java/db_data:/var/lib/mysql') 
+  _(например: '/home/cbs_admin/CRM_Java/db_data:/var/lib/mysql')_ 
  
  3. перейдите в папку glassfish, скопируйте туда архив сервера приложений glassfish4.zip 
  
- 4. в папку glassfish/backups положите архив домена domain1.zip с настройками приложения
+ 4. в папку glassfish/backups положите папку домена domain1 с настройками приложения
    и учетными записями пользователей  
 
 ### запуск setup.sh  
