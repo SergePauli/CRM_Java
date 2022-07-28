@@ -10,5 +10,6 @@ db_data/**
 mySQL/Dump.sql
 
 # production glassfish domain backup
-glassfish/backups/domain1
+domain1
+
 glassfish/glassfish4.zip*
