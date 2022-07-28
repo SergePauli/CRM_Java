@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/sergepauli/CRM_Java
+cd /home/sergepauli/Projects/CRM_Java
 docker compose up

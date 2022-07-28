@@ -28,7 +28,7 @@ services:
     # обеспечить сохранение данных при отключении контейнера поможет 
     # задание пути абсолютного пути к папке во внешней системе 'volumes'
     volumes:
-      - /home/sergepauli/CRM_Java/db_data:/var/lib/mysql
+      - /home/sergepauli/Projects/CRM_Java/db_data:/var/lib/mysql
     
     # пароль от рут-пользователя задается в 
     # специальном разделе переменных окружения 'environment'
@@ -54,7 +54,7 @@ services:
     # обеспечить сохранение данных домена при отключении контейнера поможет 
     # задание пути абсолютного пути к папке во внешней системе 'volumes'
     volumes:
-      - /home/sergepauli/CRM_Java/glassfish/backups/domain1:/usr/local/glassfish4/glassfish/domains/domain1
+      - /home/sergepauli/Projects/CRM_Java/domain1:/usr/local/glassfish4/glassfish/domains/domain1
     # Ключевое слово 'network_mode' используется для описания типа сети.
     # Тут мы указываем то, что контейнер может обращаться к 'localhost' компьютера.
 
